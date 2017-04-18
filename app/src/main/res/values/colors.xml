@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF4F4F</color>
+    <color name="colorPrimaryDark">#e53939</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="textAbu">#a8a8a8</color>
+    <color name="textHitam">#4c4c4c</color>
+    <color name="gradasi_button">#ffbf4f</color>
+    <color name="putih">#fff</color>
+
+    <color name="background_home">#ffecec</color>
+
+    <color name="rekomendasi_biru">#287acc</color>
+</resources>

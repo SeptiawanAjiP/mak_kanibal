@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="10dp">
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="240dp">
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/img_resto1_1"
+            android:scaleType="centerCrop"
+            android:id="@+id/foto_cobadisini"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+            android:text="Waroenk Ora Umum"
+            android:layout_below="@id/foto_cobadisini"
+            android:id="@+id/nama_coba_disini"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama_coba_disini"
+            android:id="@+id/rl_harga">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ico_promo"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/imgv_harga"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="14.000 - 40.000"
+                android:textColor="@color/textHitam"
+                android:textSize="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imgv_harga"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/harga_cobadisini"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_harga">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kategori : "
+                android:textColor="@color/textAbu"
+                android:textSize="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_kat_cobadisini"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="10dp"
+                android:text="Khas Indonesia"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_kat_cobadisini"
+                android:textColor="@color/textAbu"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jarak_cobadisini"
+                android:text="2.4 Km"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

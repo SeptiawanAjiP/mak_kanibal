@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="340dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            android:src="@drawable/img_resto1_3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/foto_pwt_hits"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_ket_pwt_hits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="150dp">
+
+            <TextView
+                android:id="@+id/tv_pwt_hits"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="GORDON RAMSEY CHIKEN SOUP"
+                android:textColor="@color/putih"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_hc_kategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_pwt_hits"
+                android:text="kategori"
+                android:textColor="@color/putih"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_kategori_pwt_hits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_hc_kategori"
+                android:singleLine="true"
+                android:text="Khas Indonesia"
+                android:textColor="@color/putih"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_hc_alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_kategori_pwt_hits"
+                android:text="alamat"
+                android:textColor="@color/putih"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_alamat_pwt_hits"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_hc_alamat"
+                android:text="Jl.Seloarum no 15 Purwokerto"
+                android:textColor="@color/putih"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/rl_ket_pwt_hits"
+            android:layout_toEndOf="@+id/rl_ket_pwt_hits"
+            android:layout_toRightOf="@+id/rl_ket_pwt_hits"
+            android:background="@drawable/ico_rounded"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Visit"
+                android:textColor="@color/putih"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

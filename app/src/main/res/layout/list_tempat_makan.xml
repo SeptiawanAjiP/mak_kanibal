@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_restaurant"
+            android:id="@+id/list_foto_tempat_makan"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/list_foto_tempat_makan">
+
+            <TextView
+                android:id="@+id/list_nama_tempat_makan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quattro Cafe"
+                android:textColor="@color/textHitam"
+                android:textSize="17dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_status_tempat_makan"
+                android:text="Great Authentic Food Western"
+                android:textColor="@color/rekomendasi_biru"
+                android:textSize="10dp"
+                android:layout_below="@id/list_nama_tempat_makan"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_alamt_tempat_makan"
+                android:layout_below="@+id/list_status_tempat_makan"
+                android:textSize="10dp"
+                android:text="Jl.DR.Angka No.48 Purwokerto"
+                android:layout_marginTop="3dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visit"
+                android:textColor="@color/rekomendasi_biru"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="15dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="9dp"
+        android:id="@+id/rcv_menu_makanan"
+        android:layout_marginBottom="3dp">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
